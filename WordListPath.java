@@ -1,16 +1,30 @@
-//
+// WordListPath
 import java.util.Scanner;
+import java.nio.file.Paths;
+import java.nio.file.InvalidPathException;
+import java.lang.NullPointerException;
 
 public class WordListPath {
+public static String filePath = "words.txt";
 public static void main(){
         Scanner reader = new Scanner(System.in);
         System.out.println("Enter a path for the word list you would like to use");
-        int path = reader.nextInt();
-        String filePath = "xxxxx";
-        RandomLineChooser.updateFilePath();
-        // ask for path and check that it is a valid path
-        // change the path to the file in the random word chooser method
+        String path = reader.next();
+        if (validPath(path) == true) {
+                filePath = path;
+        } else {
+                System.out.println(path + " is not a valid path.");
+                main();
+        }
         //"/home/topaz/programing/java/password_gen/words.txt"
 
+}
+public static boolean validPath(String path) { // checks for valid path
+        try {
+                Paths.get(path);
+        }catch (InvalidPathException |  NullPointerException ex) {
+                return false;
+        }
+        return true;
 }
 }

@@ -14,7 +14,6 @@ public static void main(String[] args){
         int containSpecialNum = 0;
         Boolean containWord;
         Boolean containSpecial;
-
         Scanner reader = new Scanner(System.in); // Reading from System.in
 
         System.out.println("-- Main Menu --");

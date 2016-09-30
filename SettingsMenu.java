@@ -10,6 +10,7 @@ public static void main(){
         System.out.println("1 - Add system path for word list file");
         System.out.println("2 - Add url for word list");
         int option = reader.nextInt();
+
         if (option == 0) {
                 MainMenu.main(null);
         } else if (option == 1) {
