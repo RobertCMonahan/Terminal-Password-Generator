@@ -1,14 +1,13 @@
 // fetchPage
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.net.URL;
-import java.io.FileWriter;
-import java.io.InputStreamReader;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.io.FileNotFoundException;
-
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
 public class FetchPage {
 public static void main(String urlString, String outFilename, Boolean consolePrint){
         // Takes 3 Args, two strings as and a Boolean,

@@ -1,7 +1,7 @@
 // MainMenu
 
-import java.util.Scanner;
 import java.lang.String;
+import java.util.Scanner;
 
 // main menu should be root and everything should be called from here
 // including PasswordGenerator that way I can generate many passwords. without exiting or gen a pass then change the settings and gen a new one.
@@ -19,7 +19,7 @@ public static void main(String[] args){
         System.out.println("-- Main Menu --");
         System.out.println("1 - Create a Password");
         System.out.println("2 - Settings");
-        System.out.println("3 - Exit");
+        System.out.println("9 - Exit");
         int option = reader.nextInt();
 
         if (option == 1) {
@@ -29,12 +29,12 @@ public static void main(String[] args){
                 // call settings
                 SettingsMenu.main();
 
-        } else if (option == 3) {
+        } else if (option == 9) {
                 System.out.println("-- Exiting --");
                 System.exit(0);
 
         } else {
-                System.out.println("That is not a valid response please enter a number between 1 -3\n");
+                System.out.println("Please enter a valid response");
                 main(null); // start over if response is invalid
         }
         main(null); // start over when a password is made

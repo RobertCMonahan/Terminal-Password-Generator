@@ -1,13 +1,12 @@
 // PasswordGenerator Main
 
-import java.util.Arrays;
-import java.util.Scanner;
-import java.lang.System;
-import java.util.Random;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.System;
+import java.net.MalformedURLException;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
 public class PasswordGenerator {
 public static void main(){

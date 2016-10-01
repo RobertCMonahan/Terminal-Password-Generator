@@ -8,7 +8,8 @@ public static void main(){
         System.out.println("-- Settings --");
         System.out.println("0 - Back to main menu");
         System.out.println("1 - Add system path for word list file");
-        System.out.println("2 - Add url for word list");
+        System.out.println("2 - Display path for the current word list");
+        System.out.println("3 - Add url for word list");
         int option = reader.nextInt();
 
         if (option == 0) {
@@ -16,6 +17,8 @@ public static void main(){
         } else if (option == 1) {
                 WordListPath.main();
         } else if (option == 2) {
+                System.out.println(WordListPath.filePath);
+        } else if (option == 3) {
                 WordListUrl.main();
         } else {
                 // Call settings menu again if option wasnt choosen

@@ -1,11 +1,10 @@
 // RandomLineChooser
 
-import java.io.RandomAccessFile;
-import java.util.Random;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.net.MalformedURLException;
+import java.util.Random;
 
 public class RandomLineChooser {
 public static String main(){

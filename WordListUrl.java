@@ -1,6 +1,6 @@
 // WordListUrl
-import java.util.Scanner;
 
+import java.util.Scanner;
 public class WordListUrl {
 public static void main(){
         Scanner reader = new Scanner(System.in);
