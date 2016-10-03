@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class PasswordGenerator {
 public static void main(){
@@ -20,16 +21,41 @@ public static void main(){
         Boolean containSpecial;
 
         System.out.println("How many password would you like to generate?");
-        numberOfPasswords = reader.nextInt();
+        // catch exception if user input is not a number
+        try{
+                numberOfPasswords = reader.nextInt();
+        } catch (InputMismatchException ime) {
+                System.out.println("That is not a valid response please enter a number");
+                main();
+        }
+
 
         System.out.println("How long would you like your password(s)? (enter a number above 10)");
-        totalLength = reader.nextInt();
+        // catch exception if user input is not a number
+        try{
+                totalLength = reader.nextInt();
+        } catch (InputMismatchException ime) {
+                System.out.println("That is not a valid response please enter a number");
+                main();
+        }
 
         System.out.println("Would you like your password(s) to contain words?\n1 - Yes\n0 - No");
-        containWordNum = reader.nextInt();
+        // catch exception if user input is not a number
+        try{
+                containWordNum = reader.nextInt();
+        } catch (InputMismatchException ime) {
+                System.out.println("That is not a valid response please enter a number");
+                main();
+        }
 
         System.out.println("Would you like your password(s) to contain special characters?\n1 - Yes\n0 - No");
-        containSpecialNum = reader.nextInt();
+        // catch exception if user input is not a number
+        try{
+                containSpecialNum = reader.nextInt();
+        } catch (InputMismatchException ime) {
+                System.out.println("That is not a valid response please enter a number");
+                main();
+        }
 
         // Convert responses into Booleans
         if (containWordNum == 1) {
