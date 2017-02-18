@@ -1,11 +1,8 @@
 # Terminal Password Generator
 
-This is a simple password generator and is completely used in the terminal.
+This is a simple password generator & is used in the terminal.
 
-It has been tested and built using Linux so if you use it on mac or windows please let me know if it works.
-
-It can create passwords that include words for passwords that are more easily remembered but still quite secure. These words are chosen randomly from a word list of your choosing, options on changing the word list can be found in the settings menu.
-
+Create passwords with a mix of randomly chosen words, characters, numbers, and specials. You can use your own custom word list, the one provided, or none at all for added password security. Passwords are generated in pseudo-random fashion and therefore should not be used for your most valuable accounts if security is your top concern. Fairly secure and easily typed passwords can be generated very rapidly with this tool.
 
 ## Installation
 
@@ -17,7 +14,7 @@ It can create passwords that include words for passwords that are more easily re
   java -verison
   ```
 
-1. Download the Terminal-Text repository
+1. Download the Terminal-Password-Generator repository
 2. Unzip the repository
 3. Locate the password-gen.sh file and make it executable
 
