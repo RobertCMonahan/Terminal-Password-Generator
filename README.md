@@ -1,8 +1,6 @@
 # Terminal Password Generator
 
-This is a simple password generator & is used in the terminal.
-
-Create passwords with a mix of randomly chosen words, characters, numbers, and specials. You can use your own custom word list, the one provided, or none at all for added password security. Passwords are generated in pseudo-random fashion and therefore should not be used for your most valuable accounts if security is your top concern. Fairly secure and easily typed passwords can be generated very rapidly with this tool.
+  Create passwords with a mix of randomly chosen words, characters, numbers, and specials. You can use your own custom word list, the one provided, or none at all for added password security. Passwords are generated in pseudo-random fashion and therefore should not be used for your most valuable accounts if security is your top concern. Secure and easily typed passwords can be generated very rapidly with this tool.
 
 ## Installation
 
