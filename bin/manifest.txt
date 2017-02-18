@@ -1,0 +1,2 @@
+Main-Class: MainMenu
+Class-Path: ../lib/commons-validator-1.5.1.jar
